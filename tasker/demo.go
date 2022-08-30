@@ -29,7 +29,7 @@ import (
 // 	Duration    int32              `bson:"duration,omitempty"`
 // }
 
-func main() {
+func mainDemo() {
 
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb+srv://m001-student:m001-mongodb-basics@sandbox.7zffz3a.mongodb.net/?retryWrites=true&w=majority"))
